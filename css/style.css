@@ -12,7 +12,7 @@
 #encabezado{
     background-image: url("../img/header.png");
     height: 200px;
-    color: gold;
+    color: rgb(233, 213, 62);
     text-align: center;
     text-shadow: 2px 2px 2px black;
     font-size: 50px;
