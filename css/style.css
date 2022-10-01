@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.redondeo{
+    width: 150px;
+    border-radius: 50%;
+    margin-right: 40px ;
+
+}
+
+#encabezado{
+    background-image: url("../img/header.png");
+    height: 200px;
+    color: gold;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    font-size: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.activo {
+    color:white;
+    background-color: rgb(17, 13, 230);
+}
+
+#menuNav{
+    width: 100%;
+    background-color: rgb(7, 6, 6);
+    height: 40px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+#menuNav a{
+    color: rgb(247, 250, 50);
+    padding: 10px;
+    text-decoration: none;
+
+}
+#menuNav a:hover{
+    background-color: blue;
+}
+
+
+
+
+
+#main {
+    display: flex;
+    flex-direction: row;
+}
