@@ -2,6 +2,13 @@
     margin: 0;
     padding: 0;
 }
+
+body{
+    background-color: black;
+    color: rgb(248, 225, 16);
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
 .redondeo{
     width: 150px;
     border-radius: 50%;
@@ -15,7 +22,6 @@
     color: rgb(233, 213, 62);
     text-align: center;
     text-shadow: 2px 2px 2px black;
-    font-size: 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -23,19 +29,27 @@
 
 }
 
+#encabezado h1{
+    font-size: 50px !important;
+    font-weight: bolder !important;
+    margin-top: 10px !important;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
 
 .activo {
     color:white;
-    background-color: rgb(17, 13, 230);
+    background-color: black;
 }
 
 #menuNav{
     width: 100%;
-    background-color: rgb(7, 6, 6);
+    background-color: rgb(30, 136, 223);
     height: 40px;
     display:flex;
     flex-direction: row;
     justify-content: center;
+    border-bottom: 2px solid yellow;
 
 }
 
@@ -46,41 +60,77 @@
 
 }
 #menuNav a:hover{
-    background-color: blue;
+    background-color:black;
 }
 
-
-
-
-
-#main {
-    display: flex;
-    flex-direction: row;
+.carousel-caption{
+    z-index: 1 !important;
+    background-color: rgba(0, 0, 0, 0.642) !important;
 }
-.container {
+
+.carousel-item{
+    background-color: rgba(0, 0, 0) !important;
+}
+
+.d-block{
+    height: 400px;
+
+    margin: auto;
+}
+.grid-container{
     display: grid;
-    /*grid filas y columnas*/
-    grid-template: 100px 1fr 100px / 400px 1fr;
-    grid-template-areas:"header header" "left contenido" "footer footer";
-    gap: 20px;
-    height: 10vh;
-    
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    width: 450px;
+    min-height:600px;
+    background-color: rgb(62, 156, 228);
+    color: black;
+    grid-template-columns: 1fr 3fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 0.5fr 3fr 1fr;
 }
-.header{
-    grid-area: header;
+.grid-item{
+   
+
 }
-.left{
-    grid-area: left;
+.grid-itemDoble{
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
-.contenido{
-    grid-area: contenido;
+.center{
+    text-align: center;
 }
-.footer{
-    grid-area: footer;
-}
-.item{
-    background-color: rgb(165, 54, 54);
-    padding: 10px;
+.button{
+    background-color: blue;
     color: white;
+    padding: 10px 40px;
+    border: 1px solid white;
     border-radius: 10px;
 }
+
+.button:hover{
+    background-color:black;
+}
+
+.input{
+    height: 25px;
+    width: 100%;
+    border: 1px solid black ;
+    border-radius: 10px;
+}
+.textarea{
+    width: 100%;
+    border: 1px solid black ;
+    border-radius: 10px;
+
+}
+.label{
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+.error{
+    color:red;
+}
+
