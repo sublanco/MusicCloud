@@ -214,7 +214,7 @@
                         "header header"
                         "menuNav meniNav"
                         "section section" 
-                        "footer footer ";
+                        "footer footer";
 
     }
     .contenedor-index{
@@ -231,17 +231,17 @@
     .contenedor{
 
     grid-template-areas: 
-                        "header header header"
-                        "menuNav menuNav menuNav"
+                        "header header header header"
+                        "menuNav menuNav menuNav menuNav"
                         "section section section section" 
-                        "footer footer footer footer ";
+                        "footer footer footer footer";
 
     }
     .contenedor-index{
-        grid-template-areas: "header header header"
-                            "menuNav menuNav menuNav"
-                            "main main main" ;
+        grid-template-areas: "header header header header"
+                            "menuNav menuNav menuNav menuNav"
+                            "main main main main" ;
 
-    }
+    } 
 }
 
