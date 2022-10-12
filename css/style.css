@@ -2,12 +2,64 @@
     margin: 0;
     padding: 0;
 }
+.contenedor-index{
+    width: 90%;
+    max-width: 1000px;
+    margin: 10px auto;
+    display:grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(5 1fr);
+    grid-template-rows: 3 auto;
+    grid-template-areas:    "header header header header header"
+                            "menuNav menuNav menuNav menuNav menuNav"
+                            "main main main main main" ;
+}
+.main{
+    grid-area: main;
+}
+.contenedor-pistas {
+    width: 90%;
+    max-width: 100px;
+    margin: 20px auto;
+    display:grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(5 1fr);
+    grid-template-rows: 3 auto;
+    grid-template-areas:    "header header header header header"
+                            "menuNav menuNav menuNav menuNav menuNav"
+                            "section section section section" ;
 
-body{
-    background-color: black;
+}
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display:grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(5 1fr);
+    grid-template-rows: 4 auto;
+    grid-template-areas:    "header header header header header"
+                            "menuNav  menuNav menuNav  menuNav menuNav"
+                            "section section section section section" 
+                            "footer footer footer footer footer";
+}
+
+.section{
+    grid-area: section;
+}
+.footer {
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+}
+
+/*body{
+    background-color: rgb(118, 118, 225);
     color: rgb(248, 225, 16);
     font-family: 'Times New Roman', Times, serif !important;
-}
+}*/
 
 .redondeo{
     width: 150px;
@@ -16,20 +68,23 @@ body{
 
 }
 
-#encabezado{
+.header{
+    grid-area: header;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-image: url("../img/header.png");
     height: 200px;
     color: rgb(233, 213, 62);
-    text-align: center;
     text-shadow: 2px 2px 2px black;
-    display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+
+
 
 }
 
-#encabezado h1{
+.header h1{
     font-size: 50px !important;
     font-weight: bolder !important;
     margin-top: 10px !important;
@@ -42,7 +97,7 @@ body{
     background-color: black;
 }
 
-#menuNav{
+.menuNav{
     width: 100%;
     background-color: rgb(30, 136, 223);
     height: 40px;
@@ -50,16 +105,17 @@ body{
     flex-direction: row;
     justify-content: center;
     border-bottom: 2px solid yellow;
+    grid-area: menuNav;
 
 }
 
-#menuNav a{
+.menuNav a{
     color: rgb(247, 250, 50);
     padding: 10px;
     text-decoration: none;
 
 }
-#menuNav a:hover{
+.menuNav a:hover{
     background-color:black;
 }
 
@@ -129,5 +185,63 @@ body{
 }
 .error{
     color:red;
+}
+@media screen and (max-width: 600px){
+    .contenedor{
+
+    grid-template-areas: 
+                        "header"
+                        "menuNav "
+                        "section" 
+                        "footer";
+
+    }
+    .contenedor-index{
+        grid-template-areas: "header"
+                            "menuNav"
+                            "main" ;
+
+    }
+    .img{
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 600px){
+    .contenedor{
+
+    grid-template-areas: 
+                        "header header"
+                        "menuNav "
+                        "section section" 
+                        "footer footer ";
+
+    }
+    .contenedor-index{
+        grid-template-areas: "header header"
+                            "menuNav menuNav"
+                            "main main" ;
+
+    }
+    .img{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 768px){
+    .contenedor{
+
+    grid-template-areas: 
+                        "header header header"
+                        "menuNav menuNav menuNav"
+                        "section section section section" 
+                        "footer footer footer footer ";
+
+    }
+    .contenedor-index{
+        grid-template-areas: "header header header"
+                            "menuNav menuNav menuNav"
+                            "main main main" ;
+
+    }
 }
 
