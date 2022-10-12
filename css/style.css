@@ -212,7 +212,7 @@
 
     grid-template-areas: 
                         "header header"
-                        "menuNav "
+                        "menuNav meniNav"
                         "section section" 
                         "footer footer ";
 
